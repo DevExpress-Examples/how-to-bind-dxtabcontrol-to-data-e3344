@@ -1,0 +1,48 @@
+﻿<UserControl xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"  
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="DXTabControl_DataBinding_SL.MainPage"
+             d:DesignHeight="300" d:DesignWidth="400"
+             mc:Ignorable="d">
+    <Grid x:Name="LayoutRoot" Loaded="LayoutRoot_Loaded">
+        <dx:DXTabControl x:Name="tabControl" Height="170" Width="320">
+            <dx:DXTabControl.ItemHeaderTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Path=ProductName}" />
+                </DataTemplate>
+            </dx:DXTabControl.ItemHeaderTemplate>
+            <dx:DXTabControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="ID = " />
+                            <TextBlock Text="{Binding Path=ID}" Foreground="Blue" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Price = " />
+                            <TextBlock Text="{Binding Path=Price}" Foreground="Blue" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Discount = " />
+                            <TextBlock Text="{Binding Path=Discount}" Foreground="Blue" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Order Date = " />
+                            <TextBlock Text="{Binding Path=OrderDate}" Foreground="Blue" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Status = " />
+                            <TextBlock Text="{Binding Path=Status}" Foreground="Blue" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Urgent = " />
+                            <TextBlock Text="{Binding Path=IsUrgent}" Foreground="Blue" />
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </dx:DXTabControl.ItemTemplate>
+        </dx:DXTabControl>
+    </Grid>
+</UserControl>
