@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [DataSource.cs](./CS/DXTabControl_DataBinding_SL/DataSource.cs) (VB: [DataSource.vb](./VB/DXTabControl_DataBinding_SL/DataSource.vb))
+* [MainPage.xaml](./CS/DXTabControl_DataBinding_SL/MainPage.xaml) (VB: [MainPage.xaml](./VB/DXTabControl_DataBinding_SL/MainPage.xaml))
+* [MainPage.xaml.cs](./CS/DXTabControl_DataBinding_SL/MainPage.xaml.cs) (VB: [MainPage.xaml](./VB/DXTabControl_DataBinding_SL/MainPage.xaml))
+<!-- default file list end -->
 # How to bind DXTabControl to data
 
 
